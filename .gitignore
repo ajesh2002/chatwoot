@@ -95,7 +95,11 @@ yarn-debug.log*
 .claude/settings.local.json
 .cursor
 .codex/
-.claude/
+# Ignore local Claude Code config, but keep the shared dev-environment hook
+# tracked so remote sessions provision themselves.
+.claude/*
+!.claude/hooks/
+!.claude/settings.json
 CLAUDE.local.md
 
 # Histoire deployment
